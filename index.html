@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F3F5</title>
+
+    <!-- SEO -->
+    <meta name="description" content="F3F5 is a pure vanilla anarchy Minecraft server. A world with no resets, no rules, and no admins.">
+    <link rel="canonical" href="https://f3f5.net/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="F3F5">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="F3F5">
+    <meta property="og:description" content="F3F5 is a pure vanilla anarchy Minecraft server. A world with no resets, no rules, and no admins.">
+    <meta property="og:url" content="https://f3f5.net/">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="F3F5">
+    <meta name="twitter:description" content="F3F5 is a pure vanilla anarchy Minecraft server. A world with no resets, no rules, and no admins.">
+    <meta name="twitter:url" content="https://f3f5.net/">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="f3f5" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animations CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="noise-overlay"></div>
+
+    <nav id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo">F3F5</a>
+            <div class="nav-links">
+                <a href="#info">Info</a>
+                <a href="#funding">Support</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="container hero-content">
+            <!--
+            <div class="status-pill" data-aos="fade-down">
+                <div class="status-dot"></div>
+                Maintained by Anonymous
+            </div>
+            -->
+
+            <h1 data-aos="zoom-in" data-aos-duration="1000">
+                Pure Vanilla.<br><span class="gradient-text">Absolute Anarchy.</span>
+            </h1>
+
+            <p data-aos="fade-up" data-aos-delay="200" class="hero-desc">
+                A neverending world with no rules. No admins. No resets.<br>
+                The history is written by the players.
+            </p>
+
+            <div class="btn-copy" onclick="copyIp()" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa-regular fa-copy"></i>
+                <span id="ip-text">f3f5.net</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO GRID -->
+    <section id="info">
+        <div class="container">
+            <div class="section-header" data-aos="fade-right">
+                <h2>Server Information</h2>
+                <p>F3F5 is a Minecraft server that promises its players vanilla survival gameplay with PvP.</p>
+            </div>
+
+            <div class="spotlight-group" id="spotlight-grid">
+
+                <!-- World Stats -->
+                <div class="card bento-wide" data-aos="fade-up">
+                    <div class="card-inner"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div>
+                            <h3>The World</h3>
+                            <p>The map has never been reset since <strong>March 16, 2026</strong>.<br>
+                            Current Size: <strong>6,17 GB</strong> with <strong>322</strong> players saved.<br>
+                            <span class="sub-text">(Last updated April 14, 2026)</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anarchy Concept -->
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-inner"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-skull"></i></div>
+                        <h3>No Rules</h3>
+                        <p>Griefing, stealing, and PvP are allowed. There are no land claims.</p>
+                    </div>
+                </div>
+
+                <!-- Technical -->
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-inner"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>Hardware</h3>
+                        <p>Hosted on NVMe storage for fast chunk loading. Automated payment infrastructure.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FUNDING & REWARDS -->
+    <section id="funding" class="funding-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-right">
+                <h2>Funding & Rewards</h2>
+                <p>F3F5 runs on automated payments. If the server goes unpaid for a week after a month ends, it automatically shuts down.</p>
+            </div>
+
+            <div class="funding-grid">
+
+                <!-- LEFT: Cost & Risk -->
+                <div class="funding-box" data-aos="fade-right">
+                    <h3 class="box-title">Operational Costs</h3>
+                    <p class="text-muted">The server hosting costs $5 a month. The extra funds go toward additional expenses.</p>
+
+                    <div class="price-tag">$5.00 <span class="sub-price">/ month required</span></div>
+
+                    <div class="warning-box">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <strong>Shutdown Policy:</strong><br>
+                        Once the server eventually dies due to lack of funding, the world file will be released as a torrent.
+                    </div>
+
+                    <!-- KO-FI BUTTON -->
+                    <a href="https://ko-fi.com/lokspel" target="_blank" class="btn-kofi" rel="noopener">
+                          <i class="fa-solid fa-mug-hot"></i> Support on Ko-fi
+                    </a>
+                </div>
+
+                <!-- RIGHT: Rewards -->
+                <div class="funding-box" data-aos="fade-left">
+                    <h3 class="box-title">Donation Rewards</h3>
+
+                    <!-- Reward 1 -->
+                    <div class="reward-item">
+                        <div class="reward-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                        <div>
+                            <h4 class="reward-title">Server List Message (MOTD)</h4>
+                            <p class="reward-desc">A permanent message cycled in the server list. No ads/links.</p>
+                            <span class="badge">$1.00 USD / Forever</span>
+                        </div>
+                    </div>
+
+                    <!-- Reward 2 -->
+                    <div class="reward-item">
+                        <div class="reward-icon"><i class="fa-solid fa-image"></i></div>
+                        <div>
+                            <h4 class="reward-title">Custom Server Icon</h4>
+                            <p class="reward-desc">A custom 64x64 .png image displayed in the server list. No gore/illegal content.</p>
+                            <span class="badge">$2.00 USD / 24 Hours</span>
+                        </div>
+                    </div>
+
+                    <div class="claim-instructions">
+                        <p><strong>How to claim:</strong> Support via Ko-fi, then email <a href="mailto:support@f3f5.net" class="email-link">support@f3f5.net</a> with your receipt.</p>
+
+                        <div class="code-block">
+                            Email Format:<br>
+                            - Receipt for the donation:<br>
+                            - Custom image (attach or link):<br>
+                            - Message of the day:
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Contact & Community</h2>
+                <p>Join the discussion, find a clan, or contact the operator.</p>
+            </div>
+
+           <p class="contact-label">Operator Email:</p>
+            <a href="mailto:support@f3f5.net" class="big-email">
+                support@f3f5.net
+            </a>
+
+            <!-- SOCIAL GRID -->
+            <div class="social-grid">
+
+                <a href="/discord.html" target="_blank" class="social-card discord" data-aos="fade-up" data-aos-delay="100" rel="noopener">
+                    <i class="fa-brands fa-discord"></i>
+                    <div class="social-info">
+                        <h3>Discord Community</h3>
+                        <p>Join the server chat and voice channels.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@mishacantstream" target="_blank" class="social-card youtube" data-aos="fade-up" data-aos-delay="200" rel="noopener">
+                    <i class="fa-brands fa-youtube"></i>
+                    <div class="social-info">
+                        <h3>YouTube Channel</h3>
+                        <p>Subscribe for updates and server events.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 F3F5. Not affiliated with Mojang.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-check-circle" style="color: #10b981;"></i>
+        IP Copied: f3f5.net
+    </div>
+
+    <!-- AOS JS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+    <!--
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at https://mozilla.org/MPL/2.0/.
+    -->
+</body>
+</html>
